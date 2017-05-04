@@ -1,0 +1,10 @@
+a, ol {
+	color: darkgreen;
+}
+span {
+	color: darkblue;
+	text-decoration: underline;
+}
+figcaption, ol {
+	font-size: 1.2em;
+}
