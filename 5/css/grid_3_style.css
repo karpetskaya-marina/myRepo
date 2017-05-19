@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.rectangle {
+	width: 170px;
+	height: 260px;
+	display: inline-block;
+	background-color: #000;
+	margin: 0 15px 60px;
+}
+.column {
+	width: 370px;
+	background-color: #000;
+	float: right;
+	margin-left: 30px;
+	height: 900px;
+}
+.wrapper__inner {
+	/*margin-right: -30px;*/
+	float: right;
+	width: 770px;
+}
+.row {
+	margin: 0 -15px 0;
+	font-size: 0;
+}

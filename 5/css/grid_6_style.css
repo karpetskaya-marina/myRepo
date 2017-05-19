@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.header, .footer {
+	background-color: #868686;
+	height:100px;
+	flex: 0 0 auto;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: -40px 0 -40px;
+}
+.pop_up {
+	width: 800px;
+	border: 4px solid #000;
+	background-color: #fff;
+}

@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.rect {
+	width: 50%;
+	height: 50%;
+	display: flex;
+}
+.rectangle_1 {
+	background: #000;
+}
+.rectangle_2 {
+	background-color: #5b5b5b;
+	align-items: flex-end;
+}
+.rectangle_3 {
+	background-color: #919191;
+}
+.rectangle_4 {
+	background-color: #bdbdbd;
+	align-items: flex-end;
+}
+.rectangle_5 {
+	background-color: #eaeaea;
+}
+.rectangle_6 {
+	background-color: #fff;
+}
+.wrapper {
+	font-size: 0;
+	height: 100%;
+	display: flex;
+}

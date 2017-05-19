@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.rectangle {
+	background-color: #000;
+	width: 170px;
+	display: inline-block;
+	margin: 0 15px;
+	height: 30px;
+	vertical-align: middle;
+}
+.wrapper_inner {
+	margin: 0 -15px;
+}
+.rectangle_2 {
+	height: 90px;
+}
+.rectangle_3 {
+	height: 150px;
+}
+.rectangle_4 {
+	height: 210px;
+}
+.rectangle_5 {
+	height: 270px;
+}
+.rectangle_6 {
+	height: 330px;
+}

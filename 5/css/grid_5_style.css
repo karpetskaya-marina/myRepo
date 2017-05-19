@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.rectangle {
+	background-color: #000;
+	margin: 0 15px 60px;
+	height: 200px;
+	flex-grow: 1;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.rectangle_2 {
+	flex-grow: 2;
+}
