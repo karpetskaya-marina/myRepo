@@ -37,3 +37,6 @@ $(document).ready(function(){
 		arrows: false
   });
 });
+$("span[class^='mobile-menu']").click(function() {
+	$(this).toggleClass('toggle');
+});

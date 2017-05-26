@@ -13,11 +13,8 @@
 	.header_nav a {
 		padding: 10px 15px;
 	}
-	.slider_bla {
-		float: none;
-	}
-	.content_text_item {
-		text-align: center;
+	.content_text {
+		width: 300px;
 	}
 	.slider_bla .content_text {
 		margin: 0 auto;
@@ -33,12 +30,10 @@
 	}
 	.content__light .slider_controls {
 		margin-bottom: 30px;
+		text-align: left;
 	}
 	.content__slider .slider_controls {
 		margin-bottom: 10px;
-	}
-	.phone_mockup {
-		text-align: center;
 	}
 	.phone_displays {
 		left: 50%;
@@ -58,7 +53,7 @@
 	.content_item_1 .content_text {
 		text-align: center;
 		margin: 0 auto;
-		padding-top: 500px;
+		padding-top: 450px;
 	}
 	.content_item_1 {
 		min-height: 750px;
@@ -90,25 +85,81 @@
 		margin-bottom: 20px;
 	}
 	.content__slider .slider_controls {
-		text-align: center;
+		position: absolute;
+		left: 50%;
+		top: 87%;
+		margin-left: -13px;
 	}
+	/**/
 	.header_nav {
 		text-align: center;
 		margin: 0;
+		background-color: rgba(0,0,0,.15);
 	}
 	.header_nav li {
 		display: block;
 		margin: 0;
+		padding: 10px;
+		border-bottom: 2px solid rgba(0,0,0,.3);
+		background-color: rgba(0,0,0,.15);
+	}
+	.header_nav li:hover {
+		background-color: rgba(255,255,255,.0015);
+	}
+	.header_nav ul {
+		display: none;
 	}
 	.header_nav ul li:nth-child(2) {
 		margin: 0;
 	}
 	.header {
-		padding: 0;
+		padding: 0;;
 	}
 	.logo {
 		position: static;
 		margin: 0;
+		background-color: rgba(0,0,0,.15);
+		border-bottom: 2px solid rgba(0,0,0,.3);
+		padding: 10px 0;
+	}
+	.header_nav_item::before, .header_nav_item::after {
+		display: none;
+	}
+	.header_nav_item:hover, .header_nav_item {
+		border: none;
+	}
+	.header_nav_item:hover::before, .header_nav_item:hover::after {
+		width: 0;
+	}
+	.buterbrod {
+		display: block;
+	}
+	/**/
+	.catalog figure {
+		margin: 0 10px;
+	}
+	.content__slider {
+		position: relative;
+	}
+	.phone_mockup {
+		position: relative;
+		left: 50%;
+		margin-left: -157px;
+		margin-bottom: 50px;
+	}
+	.phone_displays {
+		left: 0;
+		margin-left: 28px;
+	}
+	.slider_bla {
+		float: none;
+		text-align: center;
+	}
+	.slider_bla .slider_controls {
+		text-align: center;
+	}
+	.content__slider {
+		padding-top: 0;
 	}
 }
 @media only screen and (max-width : 480px) {
