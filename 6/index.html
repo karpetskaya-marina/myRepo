@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+			font-family: sans-serif;
+			font-size: 20px;
+			line-height: 40px;
+			position: relative;
+		}
+		a::after {
+			content: '';
+			display: block;
+			width: 50%;
+			height: 2px;
+			background-color: #000;
+			transition: .3s;
+			position: absolute;
+		}
+		ul {
+			list-style: none;
+		}
+		.main_list {
+			list-style-image: url('img/star.jpg');
+		}
+		.sub_list {
+			list-style-image: url('img/heart.jpg');
+			margin-left: 60px;
+		}
+		.sub_list ul {
+			list-style-image: url('img/sun.jpg');
+			margin-left: 60px;
+		}
+		a:hover::after {
+			width: 100%;
+		}
+		.content {
+			padding: 20px 100px;
+		}
+	</style>
+</head>
+<body>
+	<section class="content">
+		<ul class="main_list">
+			<li><a href="#">Я простая ссылка</a></li>
+			<li>
+				<a href="#">А я ссылка с ховером</a>
+				<ul class="sub_list">
+					<li><a href="#">И еще одна ссылка уже во внутреннем списке</a></li>
+					<li><a href="#">И еще одна ссылка уже во внутреннем списке</a></li>
+					<li>
+						<a href="#">И еще одна ссылка уже во внутреннем списке</a>
+						<ul>
+							<li><a href="#">Последняя ссылка в списке 3-го уровня</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Вернемся назад</a></li>
+				</ul>
+			</li>
+			<li><a href="#">И еще назад</a></li>
+		</ul>
+	</section>
+</body>
+</html>

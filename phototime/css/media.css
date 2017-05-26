@@ -1,0 +1,119 @@
+@media only screen and (max-width : 1200px) {
+	.wrapper {
+		width: 90%;
+	}
+	.slide_describe {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width : 992px) {
+	.header_nav li {
+		margin: 0 7px;
+	}
+	.header_nav a {
+		padding: 10px 15px;
+	}
+	.slider_bla {
+		float: none;
+	}
+	.content_text_item {
+		text-align: center;
+	}
+	.slider_bla .content_text {
+		margin: 0 auto;
+	}
+	.content_item_2 {
+		padding-top: 0;
+	}
+	.content {
+		padding-top: 70px;
+	}
+	.slider_controls {
+		text-align: center;
+	}
+	.content__light .slider_controls {
+		margin-bottom: 30px;
+	}
+	.content__slider .slider_controls {
+		margin-bottom: 10px;
+	}
+	.phone_mockup {
+		text-align: center;
+	}
+	.phone_displays {
+		left: 50%;
+		margin-left: -129px;
+	}
+	.slide_describe {
+		padding-top: 10%;
+	}
+	.subscribe {
+		height: 50vh;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.wrapper {
+		width: 100%;
+	}
+	.content_item_1 .content_text {
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 500px;
+	}
+	.content_item_1 {
+		min-height: 750px;
+		background: url('../img/hand.png') no-repeat 100% 0;
+	}
+	.slide_describe {
+		float: none;
+		margin: 0 auto 30px;
+	}
+	.subscribe_form label {
+		top: 0;
+		left: 100%;
+	}
+	.button.store {
+		width: 40%;
+	}
+	.button.store a {
+		font-size: 12px;
+		padding-left: 15px;
+	}
+	.footer .wrapper {
+		text-align: center;
+	}
+	.footer p {
+		font-size: 10px;
+	}
+	.footer img {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.content__slider .slider_controls {
+		text-align: center;
+	}
+	.header_nav {
+		text-align: center;
+		margin: 0;
+	}
+	.header_nav li {
+		display: block;
+		margin: 0;
+	}
+	.header_nav ul li:nth-child(2) {
+		margin: 0;
+	}
+	.header {
+		padding: 0;
+	}
+	.logo {
+		position: static;
+		margin: 0;
+	}
+}
+@media only screen and (max-width : 480px) {
+
+}
+@media only screen and (max-width : 320px) {
+
+}

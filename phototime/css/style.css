@@ -53,12 +53,18 @@ a {
 .main {
 	flex: 1 0 auto;
 }
+.header_nav {
+	margin-left: 20px;
+}
 .header_nav li {
 	display: inline-block;
 	vertical-align: middle;
 }
-.header_nav li + li {
-	margin-left: 15px;
+.header_nav li {
+	margin: 0 5px;
+}
+.header_nav ul li:nth-child(2) {
+	margin-right: 190px;
 }
 .header_nav a {
 	font-size: 16px;
@@ -66,9 +72,10 @@ a {
 	padding: 10px 25px;
 }
 .logo {
-	margin: 0 30px;
-	position: relative;
-	top: -5px;
+	margin-left: -26px;
+	position: absolute;
+	left: 50%;
+	top: 15px;
 }
 .heading_wrap {
 	position: absolute;
@@ -134,11 +141,11 @@ a {
 .social li {
 	display: inline-block;
 }
-.social li + li {
-	margin-left: 15px;
+.social li {
+	margin: 0 5px;
 }
 .social a {
-	font-size: 30px;
+	font-size: 25px;
 	transition: .2s ease-in;
 }
 .social a:hover {
@@ -177,13 +184,25 @@ a {
 .content__light {
 	background-color: #fff;
 }
-.content_item_2 .content_text {
-	display: inline-block;
-	text-align: left;
+.slider_bla {
+	float: right;
+	z-index: 10;
+	position: relative;
 }
-.content_item_2 {
-	text-align: right;
-	background: url('../img/phone.png') no-repeat 0 100%;
+.phone_mockup {
+	position: relative;
+	font-size: 0;
+	z-index: 2;
+}
+.phone_displays {
+	width: 261px;
+	position: absolute;
+	top: 92px;
+	left: 28px;
+	z-index: -1;
+}
+.phone_displays img {
+	width: 100%;
 }
 .content_item_2 {
 	padding-top: 30px;
@@ -203,7 +222,7 @@ a {
 	margin-bottom: 5px;
 }
 .slider_controls a + a {
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-right: -3px;
 }
 .content__slider {
@@ -214,7 +233,7 @@ a {
 	text-align: right;
 	margin-bottom: 10px;
 }
-.slider figure, .slider div {
+.slider figure {
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -223,6 +242,8 @@ a {
 	text-align: center;
 	color: #373737;
 	margin-right: 41px;
+	float: left;
+	padding-top: 40px;
 }
 .slide_describe h3 {
 	text-transform: uppercase;
@@ -241,7 +262,7 @@ a {
 }
 .catalog figure {
 	width: 370px;
-	margin-left: 20px;
+	margin: 0 10px;
 	text-align: right;
 }
 .catalog figure img {
@@ -250,7 +271,8 @@ a {
 .subscribe {
 	background: url("../img/subscribe.jpg") no-repeat 50% 50%;
 	background-size: cover;
-	min-height: 790px;
+	height: 90vh;
+	max-height: 790px;
 	text-align: center;
 	position: relative;
 }
@@ -279,7 +301,7 @@ a {
 	border: none;
 	font-family: 'GothamRounded-Medium';
 }
-#input_submit {
+.input_submit {
 	display: none;
 }
 .subscribe_form label {
@@ -291,16 +313,19 @@ a {
 	border-bottom-right-radius: 2px;
 	position: absolute;
 	margin-left: -63px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.subscribe_form label::before {
+	content: url('../img/fa-check.png');
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -10px;
 }
 .form {
 	position: relative;
-}
-.input_submit i {
-	font-size: 20px;
-	color: #fff;
-	line-height: 60px;
-	display: block;
-	cursor: pointer;
 }
 .content__store {
 	text-align: center;
@@ -334,23 +359,25 @@ a {
 	position: relative;
 }
 .button.store a::after {
-	font-family: 'fontawesome';
 	display: inline-block;
 	position: absolute;
 	right: 0;
 	background-color: #16a085;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
+	width: 56px;
+	text-align: center;
+	line-height: 56px;
 }
 .play_store::after {
-	content: "\f17b";
-	padding: 0 15px 0 16px;
-	font-size: 29px;
+	content: url('../img/fa-android.png');
+	display: block;
+	padding-top: 5px;
 }
 .apple_store::after {
-	content: "\f179";
-	padding: 0 18px 0 17px;
-	font-size: 24px;
+	content: url('../img/fa-apple.png');
+	display: block;
+	padding-top: 2px;
 }
 .footer {
 	font-family: 'GothamRounded-Bold';
@@ -385,12 +412,12 @@ a {
 .footer_nav a:hover {
 	color: #16a085;
 }
-.header_nav_hover {
+.header_nav_item {
 	border:1px solid transparent;
 	-webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
  transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
 }
-.header_nav_hover::before {
+.header_nav_item::before {
 	content: '';
   position: absolute;
   left: 0px;
@@ -403,10 +430,10 @@ a {
   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
   transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
 }
-.header_nav_hover:hover::before, .header_nav_hover:hover::after {
+.header_nav_item:hover::before, .header_nav_item:hover::after {
 	width: 100%;
 }
-.header_nav_hover::after {
+.header_nav_item::after {
 	content: '';
   position: absolute;
   right: 0px;
@@ -417,7 +444,10 @@ a {
   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
   transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
 }
-.header_nav_hover:hover {
+.header_nav_item:hover {
   border-left:1px solid #fff;
   border-right:1px solid #fff;
+}
+.buterbrod {
+	position: absolute;
 }

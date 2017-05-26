@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			padding-top: 130px;
+			text-align: center;
+		}
+		.dog {
+			width: 270px;
+			height: 299px;
+			border: 4px solid #ff001e;
+			margin: 0 15px;
+			display: inline-block;
+			position: relative;
+		}
+		.dog:hover .insert {
+			background-color: rgba(0,0,0,.3);
+			cursor: pointer;
+		}
+		.insert {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.insert_caption {
+			width: 240px;
+			padding: 0 5px;
+			background-color: #000;
+			color: #fff;
+			font-size: 20px;
+			letter-spacing: 0.025em;
+			line-height: 46px;
+			display: none;
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+		}
+		.dog:hover .insert, .dog:hover .insert_caption {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="dog">
+			<img src="img/Слой 1.jpg" alt="doge">
+			<div class="insert">
+				<div class="insert_caption">Doge is amazing</div>
+			</div>
+		</div>
+		<div class="dog">
+			<img src="img/Слой 1.jpg" alt="doge">
+			<div class="insert">
+				<div class="insert_caption">Doge is amazing</div>
+			</div>
+		</div>
+		<div class="dog">
+			<img src="img/Слой 1.jpg" alt="doge">
+			<div class="insert">
+				<div class="insert_caption">Doge is amazing</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
