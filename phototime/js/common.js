@@ -36,7 +36,9 @@ $(document).ready(function(){
 	$('.phone_displays').slick({
 		arrows: false
   });
-});
-$("span[class^='mobile-menu']").click(function() {
-	$(this).toggleClass('toggle');
+
+	$("span[class^='mobile-menu']").click(function() {
+		$(this).toggleClass('toggle');
+		$('.header_nav ul').slideToggle("slow");
+	});
 });
