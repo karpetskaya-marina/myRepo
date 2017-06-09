@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+		html, body {
+			height: 100%;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 400;
+		}
+		h1 {
+			margin-bottom: 10px;
+		}
+		form {
+			width: 500px;
+			margin: 10px auto;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 20px 40px 0 rgba(0,0,0,.2);
+			padding: 10px 10px 20px;
+		}
+		.form_group label {
+			display: block;
+			margin: 5px 0;
+		}
+		input:not(.submit):focus, textarea:focus, select:focus {
+			border-color: #bfbfbf;
+			box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+		}
+		input, textarea, select {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			padding: 5px;
+			font-family: "Open Sans";
+		}
+		.form_group {
+			margin: 10px 0;
+		}
+		.form_group input, select, .submit, textarea {
+			width: 100%;
+		}
+		.border-top {
+			border-top: 1px solid #ccc;
+			padding: 10px 0;
+		}
+		.border-top input {
+			margin-right: 5px;
+		}
+		.border-top label {
+			margin-right: 10px;
+		}
+		.submit {
+			background-color: #ccc;
+			border: 1px solid #b3b3b3;
+		}
+		.submit:hover {
+			opacity: .8;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Fill the form</h1>
+		<div class="form_group">
+			<label for="name">Your Name</label>
+			<input type="text" id="name" placeholder="John" name="name">
+		</div>
+		<div class="form_group">
+			<label for="surname">Your Surname</label>
+			<input type="text" id="surname" placeholder="Doe" name="surname">
+		</div>
+		<div class="form_group">
+			<label for="email">Your Email</label>
+			<input type="email" name="email" placeholder="mail@example.com" id="email">
+		</div>
+		<div class="form_group">
+			<label for="password">Your Password</label>
+			<input type="password" placeholder="Password" name="password" id="password">
+		</div>
+		<div class="form_group">
+			<label for="comment">Few words about You</label>
+			<textarea name="comment" id="comment" placeholder="Im awesome!"></textarea>
+		</div>
+		<div class="border-top">
+			<label for="country">Your Country</label>
+			<select id="country" name="country">
+				<option value="ua">Ukraine</option>
+				<option value="usa">USA</option>
+				<option value="australia">Australia</option>
+			</select>
+		</div>
+		<div class="border-top">
+			<p>Your gender</p>
+			<label><input type="radio" name="gender" value="male">Male</label>
+			<label><input type="radio" name="gender" value="female">Female</label>
+			<label><input type="radio" name="gender" value="other">Other</label>
+		</div>
+		<div class="border-top">
+			<label>
+				<input type="checkbox" name="newsseller">
+				Subscribe to newsseller
+			</label>
+		</div>
+		<input type="submit" value="Submit" class="submit">
+	</form>
+</body>
+</html>
