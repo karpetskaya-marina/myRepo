@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		form {
+			font-family: Arial, sans-serif;
+			width: 400px;
+			margin: 100px auto 0;
+			border: 1px solid #000;
+			padding: 15px;
+			font-size: 14px;
+		}
+		.form_group label, .form_group input {
+			width: 100%;
+		}
+		.form_group input {
+			border: 1px solid #000;
+			line-height: 24px;
+			padding: 0 5px;
+			margin: 5px 0 15px;
+		}
+		p, .radio {
+			margin-bottom: 10px;
+		}
+		.radio label {
+			margin-right: 5px;
+		}
+		.submit {
+			width: 118px;
+			background-color: #000;
+			color: #fff;
+			line-height: 20px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="form_group">
+			<label for="name">Ваше имя</label>
+			<input type="text" id="name" name="name" placeholder="Например, Иванов Иван Иванович">
+		</div>
+		<div class="form_group">
+			<label for="post">Ваш род деятельности</label>
+			<input type="text" id="post" name="post" placeholder="Например, Выращиваю огурцы">
+		</div>
+		<div class="radio">
+			<p>Согласны ли Вы с условиями?</p>
+			<label>
+				<input type="radio" name="condition" checked>
+				Категорически ДА!
+			</label>
+			<label>
+				<input type="radio" name="condition">
+				Категорически НЕТ!
+			</label>
+		</div>
+		<input type="submit" value="Отправить" class="submit">
+	</form>
+</body>
+</html>

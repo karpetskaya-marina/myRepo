@@ -1,0 +1,11 @@
+input[type="checkbox"] {}
+input[type="checkbox"]:not(:checked) {}
+*[id|="message"] {}
+*[id^="message-"] {}
+*[$.zip] {}
+*[data-action*="delete"] {}
+*[data-ation]:not([data-ation*="delete"]) {}
+#messages li:nth-child(2n) {}
+h3#widget-title + * {}
+h3#widget-title ~ a {}
+#messages li:last-child a {}

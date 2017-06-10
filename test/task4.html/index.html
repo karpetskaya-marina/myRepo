@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			border: 2px solid #000;
+			padding: 5px;
+			width: 40px;
+			height: 40px;
+		}
+		div {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #00f;
+			position: relative;
+			z-index: 1;
+		}
+		td:hover {
+			cursor: pointer;
+		}
+		tr:hover {
+			background-color: #ffc600;
+		}
+		td:hover div {
+			background-color: #ff8a00;
+		}
+		tr:nht-child(2):hover .c3 {
+			background-color: #ffc600;
+		}
+		table {
+			position: relative;
+		}
+		td:hover::before {
+			display: block;
+		}
+		td::before {
+			position: absolute;
+			content: '';
+			display: none;
+			width: 50px;
+			height: 255px;
+			background-color: #ffc600;
+			margin-left: -5px;
+			top: 0;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><div></div></td>
+			<td><div></div></td>
+			<td class="c3"><div></div></td>
+			<td><div></div></td>
+			<td><div></div></td>
+		</tr>
+		<tr>
+			<td><div></div></td>
+			<td><div></div></td>
+			<td class="c3"><div></div></td>
+			<td><div></div></td>
+			<td><div></div></td>
+		</tr>
+		<tr>
+			<td><div></div></td>
+			<td><div></div></td>
+			<td class="c3"><div></div></td>
+			<td><div></div></td>
+			<td><div></div></td>
+		</tr>
+		<tr>
+			<td><div></div></td>
+			<td><div></div></td>
+			<td class="c3"><div></div></td>
+			<td><div></div></td>
+			<td><div></div></td>
+		</tr>
+		<tr>
+			<td><div></div></td>
+			<td><div></div></td>
+			<td class="c3"><div></div></td>
+			<td><div></div></td>
+			<td><div></div></td>
+		</tr>
+	</table>
+</body>
+</html>
