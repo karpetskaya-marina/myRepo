@@ -57,12 +57,19 @@ gulp.task('browser-sync', function() {
 //});
 
 gulp.task('css', function () {
-    return gulp.src('app/postcss/**/*.css')
-        .pipe( sourcemaps.init() )
-        .pipe( postcss([ require('precss'), require('postcss-focus'), require("css-mqpacker"), require('postcss-clearfix'), require('autoprefixer'), require('cssnano') ]) )
-        .pipe( sourcemaps.write('.') )
+    return gulp.src('app/postcss/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([
+					require('precss'),
+					require('postcss-focus'),
+					require("css-mqpacker"),
+					require('postcss-clearfix'),
+					require('autoprefixer')({browsers: ['last 15 versions']}),
+					require('cssnano')
+				], {syntax: require('postcss-scss')}).on("error", notify.onError()))
+        .pipe(sourcemaps.write('.'))
 				.pipe(rename({suffix: '.min', prefix : ''}))
-        .pipe( gulp.dest('app/css/') )
+        .pipe(gulp.dest('app/css/'))
 				.pipe(browserSync.reload({stream: true}));
 });
 
