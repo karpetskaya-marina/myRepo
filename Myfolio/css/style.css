@@ -76,7 +76,7 @@ h1 {
 }
 .hiro_image {
 	height: 728px;
-	background: url("../img/bg.jpg") no-repeat 0 0;
+	background: url("../img/bg.jpg") no-repeat 50% 50%;
 	background-size: cover;
 	position: relative;
 	max-height: 95vh;
@@ -166,9 +166,6 @@ h1 {
   z-index:1;
   box-sizing:border-box;
 	left: 0;
-}
-.hiro_image .button:hover::before {
-	border-left-width: 3px;
 }
 .button:hover::before{
   border:2px solid #cfc91d;
@@ -325,7 +322,7 @@ h3::after {
 	text-align: center;
 	background-color: #fff;
 }
-.my_work p {
+.my_work > p {
 	max-width: 690px;
 	margin: 0 auto;
 	margin-bottom: 60px;
@@ -343,6 +340,9 @@ h3::after {
 	width: 25%;
 	float: left;
 	position: relative;
+}
+.center {
+	color: #7e8287;
 }
 /**/
 .contact {
@@ -375,13 +375,22 @@ input, textarea, label {
 	text-transform: uppercase;
 	font-size: 16px;
 	line-height: 41px;
-	padding-top: 50px;
+	padding: 0 10px;
+}
+label {
+	margin-bottom: 54px;
+}
+textarea {
+	line-height: normal;
+	font-family: "Open Sans", sans-serif;
+	text-align: left;
 }
 .name, .email, .message {
 	background-color: #0b0b0b;
 	border: none;
 	border-bottom: 1px solid #898989;
 	margin: 0 auto;
+	padding-top: 50px;
 }
 .name, .email {
 	max-width: 630px;
