@@ -29,8 +29,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js', // сюда вписываем установленные библиотеки
 		'app/libs/slick-carousel/slick/slick.min.js',
-		'app/libs/isotope/dist/isotope.pkgd.min.js',
-		'app/libs/slick-lightbox/dist/slick-lightbox.min.js',
+		'app/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js',
 		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
