@@ -1033,8 +1033,8 @@ figure img {
 			&::after {
 				content: "";
 				position: absolute;
-				width: 15px;
-				height: 15px;
+				width: 13px;
+				height: 13px;
 				border-top: 2px solid #ccc;
 				border-left: 2px solid #ccc;
 				top: 24px;
@@ -1059,7 +1059,7 @@ figure img {
 .accordion_item.active .accordion_item_header::after {
 	/*transform: rotate(45deg);*/
 	transform: rotateX(180deg) rotateY(0) rotateZ(225deg);
-	height: 15px;
+	height: 13px;
 }
 
 .mCSB_scrollTools .mCSB_draggerRail {
