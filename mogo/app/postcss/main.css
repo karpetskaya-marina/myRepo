@@ -910,7 +910,10 @@ figure img {
 .service_2 {
 	background-color: #fff;
 	padding: 105px 0 0;
-
+	.accordion_wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
 	blockquote::before {
 		content: "";
 		position: absolute;
@@ -969,7 +972,6 @@ figure img {
 	figure {
 		max-width: 570px;
 		width: 50%;
-		display: inline-block;
 	}
 
 	.service_2_content {
@@ -977,10 +979,8 @@ figure img {
 	}
 
 	.accordion {
-		display: inline-block;
-		max-width: 50%;
-		width: 600px;
-		padding-left: 25px;
+		width: 50%;
+		margin-left: 25px;
 		vertical-align: top;
 
 		.accordion_item {
