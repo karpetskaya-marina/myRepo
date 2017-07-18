@@ -940,6 +940,9 @@ figure img {
 		text-align: center;
 	}
 	@media all and (max-width: 1180px) {
+		.accordion_wrapper {
+			display: block;
+		}
 		.accordion,
 		figure {
 			margin: 0 auto;
